@@ -9,6 +9,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --spacing: 0.25rem;
+    --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
@@ -174,6 +175,18 @@
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
+  .h-\[15px\] {
+    height: 15px;
+  }
+  .h-\[18px\] {
+    height: 18px;
+  }
+  .h-\[20px\] {
+    height: 20px;
+  }
   .h-\[35px\] {
     height: 35px;
   }
@@ -189,8 +202,20 @@
   .h-screen {
     height: 100vh;
   }
+  .w-\[15px\] {
+    width: 15px;
+  }
+  .w-\[18px\] {
+    width: 18px;
+  }
+  .w-\[20px\] {
+    width: 20px;
+  }
   .w-\[35px\] {
     width: 35px;
+  }
+  .w-\[40px\] {
+    width: 40px;
   }
   .w-\[80px\] {
     width: 80px;
@@ -200,6 +225,12 @@
   }
   .w-\[380px\] {
     width: 380px;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -222,6 +253,10 @@
   .rounded-\[20px\] {
     border-radius: 20px;
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .bg-black-bg {
     background-color: var(--color-black-bg);
   }
@@ -233,6 +268,12 @@
   }
   .bg-white-textfield {
     background-color: var(--color-white-textfield);
+  }
+  .p-1 {
+    padding: calc(var(--spacing) * 1);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -256,21 +297,44 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
   .text-white-text {
     color: var(--color-white-text);
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .opacity-80 {
     opacity: 80%;
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
