@@ -6,22 +6,22 @@
     <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
 </head>
-<body class="bg-black-bg">
+<body class="bg-white-bg dark:bg-black-bg">
     <div class="h-screen flex justify-center align-middle items-center">
-        <div class="w-[350px] h-[260px] bg-black-container rounded-[20px] flex justify-center align-middle items-center p-4 mx-4">
+        <div class="w-[350px] h-[260px] bg-white-container dark:bg-black-container shadow-black-container shadow-md/20 rounded-[20px] flex justify-center align-middle items-center p-4 mx-4">
             <div class="w-[250px] h-[210px]">
-                <div class="text-white-text text-center font-instrument font-bold mb-4">
+                <div class="text-black-text dark:text-white-text text-center font-instrument font-bold mb-4">
                     <p class="text-[25px]">Password Generator</p>
                     <p class="text-[12px] font-semibold">Guaranteed Complexity.</p>
                 </div>
 
-                <div id="txtfield-el" class="h-[40px] bg-white-textfield opacity-80 rounded-2xl mb-4 text-[18px] font-instrument flex justify-center items-center"></div>
+                <div id="txtfield-el" class="h-[40px] bg-offwhite-textfield/80 dark:bg-white-textfield/80 rounded-2xl mb-4 text-[18px] font-instrument flex justify-center items-center"></div>
 
                 <div class="flex flex-col justify-center items-center gap-4">
-                    <button id="button-el" onclick="generatePass()" class="w-[80px] h-[35px] flex justify-center align-middle items-center bg-black-button text-white-text font-instrument font-bold text-[12px] rounded-[20px] active:scale-90 transform duration-150 ease-in-out">Generate</button>
-                    <div class="w-[35px] h-[35px] rounded-3xl bg-black-bg flex justify-center items-center active:scale-90 transform duration-150 ease-in-out">
-                        <img src="images/light-mode.png" alt="Light Mode Icon" class="w-[20px] h-[20px]">
-                    </div>
+                    <button id="button-el" onclick="generatePass()" class="w-[80px] h-[35px] flex justify-center align-middle items-center bg-white-button text-black-text dark:bg-black-button dark:text-white-text font-instrument font-bold text-[12px] rounded-[20px] active:scale-90 transform duration-150 ease-in-out">Generate</button>
+                    <button id="dark-el" onclick="toggleDarkMode()" class="w-[35px] h-[35px] rounded-3xl bg-white-bg dark:bg-black-button flex justify-center items-center active:scale-90 transform duration-150 ease-in-out">
+                        <img src="images/pg-light-mode.png" alt="Light Mode Icon" class="w-[20px] h-[20px]">
+                    </button>
                 </div>
 
             </div>
