@@ -1,5 +1,6 @@
 let txtFieldEl = document.querySelector("#txtfield-el");
 let buttonEl = document.querySelector("#button-el");
+let darkEl = document.querySelector("#dark-el");
 
 let chars = 
 [   
@@ -17,4 +18,8 @@ function generatePass() {
         let charIndex = Math.floor(Math.random() * chars.length);
         txtFieldEl.textContent += chars[charIndex];
     }
+}
+
+function toggleDarkMode() {
+    document.documentElement.classList.toggle("dark");
 }
