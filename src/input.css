@@ -4,6 +4,12 @@
 @theme {
     --font-instrument: "Instrument Sans", sans-serif;
 
+    --color-white-bg: #E5E5E5;
+    --color-white-container: #F2F2F2;
+    --color-white-button: #E3E3E3;
+    --color-offwhite-textfield: #E3E3E3;
+    --color-black-text: #303030;
+
     --color-black-bg: #222222;
     --color-black-container: #171717;
     --color-black-button: #303030;
