@@ -1,6 +1,7 @@
 let txtFieldEl = document.querySelector("#txtfield-el");
 let buttonEl = document.querySelector("#button-el");
 let darkEl = document.querySelector("#dark-el");
+let imgIcon = document.querySelector("#imgicon-el");
 
 let chars = 
 [   
@@ -21,5 +22,13 @@ function generatePass() {
 }
 
 function toggleDarkMode() {
-    document.documentElement.classList.toggle("dark");
+    let btnIcon = document.documentElement.classList.toggle("dark");
+
+    if (btnIcon) {
+        imgIcon.src = "images/pg-light-mode.png";
+        imgIcon.alt = "Light Mode Icon";
+    } else {
+        imgIcon.src = "images/pg-dark-mode.png";
+        imgIcon.alt = "Dark Mode Icon";
+    }
 }
