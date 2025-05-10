@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
 </head>
-<body class="bg-white-bg dark:bg-black-bg">
+<body class="bg-white-bg dark:bg-black-bg transition-colors duration-150 ease-in-out">
     <div class="h-screen flex justify-center align-middle items-center">
-        <div class="w-[350px] h-[260px] bg-white-container dark:bg-black-container shadow-black-container shadow-md/20 rounded-[20px] flex justify-center align-middle items-center p-4 mx-4">
+        <div class="w-[350px] h-[260px] bg-white-container dark:bg-black-container transition-colors duration-150 ease-in-out shadow-black-container shadow-md/20 rounded-[20px] flex justify-center align-middle items-center p-4 mx-4">
             <div class="w-[250px] h-[210px]">
-                <div class="text-black-text dark:text-white-text text-center font-instrument font-bold mb-4">
+                <div class="text-black-text dark:text-white-text transition-colors duration-150 ease-in-out text-center font-instrument font-bold mb-4">
                     <p class="text-[25px]">Password Generator</p>
                     <p class="text-[12px] font-semibold">Guaranteed Complexity.</p>
                 </div>
 
-                <div id="txtfield-el" class="h-[40px] bg-offwhite-textfield/80 dark:bg-white-textfield/80 rounded-2xl mb-4 text-[18px] font-instrument flex justify-center items-center"></div>
+                <div id="txtfield-el" class="h-[40px] bg-offwhite-textfield/80 dark:bg-white-textfield/80 transition-colors duration-150 ease-in-out rounded-2xl mb-4 text-[18px] font-instrument flex justify-center items-center"></div>
 
                 <div class="flex flex-col justify-center items-center gap-4">
                     <button id="button-el" onclick="generatePass()" class="w-[80px] h-[35px] flex justify-center align-middle items-center bg-white-button text-black-text dark:bg-black-button dark:text-white-text font-instrument font-bold text-[12px] rounded-[20px] active:scale-90 transform duration-150 ease-in-out">Generate</button>
