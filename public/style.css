@@ -316,22 +316,22 @@
     }
   }
   .dark\:bg-black-bg {
-    @media (prefers-color-scheme: dark) {
+    &:where(.dark, .dark *) {
       background-color: var(--color-black-bg);
     }
   }
   .dark\:bg-black-button {
-    @media (prefers-color-scheme: dark) {
+    &:where(.dark, .dark *) {
       background-color: var(--color-black-button);
     }
   }
   .dark\:bg-black-container {
-    @media (prefers-color-scheme: dark) {
+    &:where(.dark, .dark *) {
       background-color: var(--color-black-container);
     }
   }
   .dark\:bg-white-textfield\/80 {
-    @media (prefers-color-scheme: dark) {
+    &:where(.dark, .dark *) {
       background-color: color-mix(in srgb, #FAF9F6 80%, transparent);
       @supports (color: color-mix(in lab, red, red)) {
         background-color: color-mix(in oklab, var(--color-white-textfield) 80%, transparent);
@@ -339,7 +339,7 @@
     }
   }
   .dark\:text-white-text {
-    @media (prefers-color-scheme: dark) {
+    &:where(.dark, .dark *) {
       color: var(--color-white-text);
     }
   }
